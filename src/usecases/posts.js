@@ -5,6 +5,17 @@ function getAll() {
     return Posts.find()
 }
 
+function create(post){
+    return Posts.create(post)
+}
+
+function findPost(id){
+    return Posts.findById(id)
+}
+
+
 module.exports = {
-    getAll
+    getAll,
+    create,
+    findPost
 }
