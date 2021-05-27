@@ -4,8 +4,8 @@ const mongoose = require('mongoose')
 
 const postsSchema = new mongoose.Schema({
     createdDate: {
-        type: Date,
-        required: true
+        type: String,
+        required: false
     },
     content: {
         type: String,
