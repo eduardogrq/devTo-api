@@ -21,7 +21,7 @@ router.get('/', async (request, response) => {
         response.status(400)
         response.json({
             succes: false,
-            message: 'Error at get all koders',
+            message: 'Error at get all posts',
             error: error.message
         })
     }
@@ -63,7 +63,7 @@ router.get('/:id', async (request, response) => {
         response.status(400)
         response.json({
             succes: false,
-            message: 'Error at update koder',
+            message: 'Error at update post',
             error: error.message
         })
     }
